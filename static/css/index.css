@@ -1,0 +1,17 @@
+body{
+    background-color: #84DAEF;
+}
+
+h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button{
+    margin-left: 50%;
+}
