@@ -1,4 +1,8 @@
-FROM winamd64/python:3.9.12
+FROM ubuntu:20.04
+
+RUN apt-get update && apt-get install -y \
+    python3.9.12 \
+    python3-pip
 
 COPY ./requirements.txt /app/requirements.txt
 
