@@ -1,12 +1,9 @@
-FROM python:3
-
-
-COPY ./requirements.txt app/requirements.txt
+FROM python:3.9.12
 
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+COPY . .
 
-COPY . /app
+RUN pip install -r requirements.txt
 
 CMD  ["python" "app/main.py"]
