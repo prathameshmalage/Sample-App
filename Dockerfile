@@ -1,10 +1,7 @@
-FROM ubuntu:20.04
+FROM python:3
 
-RUN apt-get update && apt-get install -y \
-    python3.9.12 \
-    python3-pip
 
-COPY ./requirements.txt /app/requirements.txt
+COPY ./requirements.txt app/requirements.txt
 
 WORKDIR /app
 
